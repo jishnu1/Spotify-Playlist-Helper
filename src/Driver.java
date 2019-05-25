@@ -9,9 +9,6 @@ public class Driver {
 		SpotifyPlaylistHelper app = new SpotifyPlaylistHelper();
 		app.makeindex("Playlists.txt", "Library.txt");
 		
-		System.out.println(app.library);
-		System.out.println(app.playlists);
-		
 		System.out.println("Choose an operation:");
 		System.out.println("(1) Scan for songs that appear in library but do not appear in playlists");
 		System.out.println("(2) Scan for songs that appear in playlists but do not appear in library");
