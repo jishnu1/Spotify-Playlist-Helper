@@ -61,8 +61,24 @@ public class SpotifyPlaylistHelper {
 			{
 				if (!library.contains(song))
 				{
-					buffW.write(song);
-					buffW.write("\n");
+					boolean multiple = false;
+					
+					for (Occurrence occ : playlists.get(song))
+					{
+						if (!multiple)
+						{
+							buffW.write(song);
+							buffW.write("\n");
+							buffW.write(occ + "");
+							buffW.write("\n");
+							multiple = true;
+						}
+						else
+						{
+							buffW.write(occ + " | ");
+							buffW.write("\n");
+						}
+					}
 				}
 			}
 			buffW.close();
@@ -89,8 +105,24 @@ public class SpotifyPlaylistHelper {
 			{
 				if (playlists.get(song).size()>1)
 				{
-					buffW.write(song);
-					buffW.write("\n");
+					boolean multiple = false;
+					
+					for (Occurrence occ : playlists.get(song))
+					{
+						if (!multiple)
+						{
+							buffW.write(song);
+							buffW.write("\n");
+							buffW.write(occ + "");
+							buffW.write("\n");
+							multiple = true;
+						}
+						else
+						{
+							buffW.write(occ + "");
+							buffW.write("\n");
+						}
+					}
 				}
 			}
 			buffW.close();
@@ -125,12 +157,13 @@ public class SpotifyPlaylistHelper {
 						{
 							buffW.write(song);
 							buffW.write("\n");
-							buffW.write(occ + " | ");
+							buffW.write(occ + "");
+							buffW.write("\n");
 							duplicate = true;
 						}
 						else
 						{
-							buffW.write(occ + " | ");
+							buffW.write(occ + "");
 							buffW.write("\n");
 						}
 					}

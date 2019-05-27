@@ -4,8 +4,9 @@
 3. open Spotify desktop application
 4. select (ctrl A), copy (ctrl c), and paste (ctrl v) library
    into Library.txt
-5. rename lists inside Playlists.txt and add more if needed
+5. rename lists inside Playlists.txt (no spaces) and add more if
+   needed
 6. rename list files using the same names
 7. select (ctrl A), copy (ctrl c), and paste (ctrl v) each
-   list into each list file
-8. run Driver.exe and follow the instructions that appear
+   playlist into each list file
+8. run Driver.exe and follow the instructions
