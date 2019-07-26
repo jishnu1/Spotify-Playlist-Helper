@@ -1,4 +1,3 @@
-
 1. install Java
 2. download files
 3. open Spotify desktop application
