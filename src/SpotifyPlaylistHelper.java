@@ -15,7 +15,7 @@ public class SpotifyPlaylistHelper {
 	
 	public void scan1() // (1) Scan for songs that appear in library but do not appear in playlists
 	{
-		File result = new File("Result.txt");
+		File result = new File("RESULT.txt");
 		
 		try
 		
@@ -44,7 +44,7 @@ public class SpotifyPlaylistHelper {
 	
 	public void scan2() // (2) Scan for songs that appear in playlists but do not appear in library
 	{
-		File result = new File("Result.txt");
+		File result = new File("RESULT.txt");
 		
 		try
 		{
@@ -75,7 +75,7 @@ public class SpotifyPlaylistHelper {
 						}
 						else
 						{
-							buffW.write(occ + " | ");
+							buffW.write(occ + "");
 							buffW.write("\n");
 						}
 					}
@@ -88,7 +88,7 @@ public class SpotifyPlaylistHelper {
 	
 	public void scan3() // (3) Scan for songs that appear in multiple playlists
 	{
-		File result = new File("Result.txt");
+		File result = new File("RESULT.txt");
 		
 		try
 		{
@@ -132,7 +132,7 @@ public class SpotifyPlaylistHelper {
 	
 	public void scan4() // (4) Scan for songs that appear in a playlist multiple times
 	{
-		File result = new File("Result.txt");
+		File result = new File("RESULT.txt");
 		
 		try
 		{
