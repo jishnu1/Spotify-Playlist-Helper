@@ -9,7 +9,7 @@ public class SpotifyPlaylistHelper {
 	
 	public SpotifyPlaylistHelper()
 	{
-		library = new HashSet<String>(100,2.0f);
+		library = new HashSet<String>(1000,2.0f);
 		playlists = new HashMap<String,ArrayList<Occurrence>>(1000,2.0f);
 	}
 	
@@ -18,7 +18,6 @@ public class SpotifyPlaylistHelper {
 		File result = new File("RESULT.txt");
 		
 		try
-		
 		{
 			result.createNewFile();
 		}
